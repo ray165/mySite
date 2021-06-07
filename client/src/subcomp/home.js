@@ -1,11 +1,12 @@
 import React, { useState, useRef, useEffect } from "react";
 import Typography from "@material-ui/core/Typography";
+import './App.css'
 
 export default function Home() {
   const [fade, setFade] = useState(true);
   const counter = useRef(0);
   const [index, setIndex] = useState(0);
-  const descriptionArray = ["SFU Business", "Aspiring Software Developer", "BCIT Programming", "Voted Best Developer By My Mom"]
+  const descriptionArray = ["SFU Business", "Aspiring Software Developer", "BCIT Co-op", "Voted Best Developer By My Mom"]
 
   useEffect(() => {
       
@@ -24,7 +25,7 @@ export default function Home() {
 
   return (
     <>
-      <Typography variant="h2" component="h1">
+      <Typography className="title" variant="h2" component="h1">
         Raymond Wong
       </Typography>
       <Typography >
