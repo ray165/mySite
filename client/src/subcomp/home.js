@@ -1,6 +1,18 @@
 import React, { useState, useRef, useEffect } from "react";
 import Typography from "@material-ui/core/Typography";
-import './App.css'
+import Box from '@material-ui/core/Box';
+import '../App.css'
+
+
+const defaultProps = {
+  bgcolor: 'background.paper',
+  borderColor: 'text.primary',
+  m: 1,
+  border: 1,
+  maxWidth: 450,
+  // style: { width: '5rem', height: '5rem' },
+};
+
 
 export default function Home() {
   const [fade, setFade] = useState(true);
@@ -31,6 +43,34 @@ export default function Home() {
       <Typography >
         {descriptionArray[index]}
       </Typography>
+      <Box borderRadius="5%" {...defaultProps}>
+        <Typography >Wecycle (Fullstack App)</Typography>
+        <Typography>
+          <p>
+            A recycling app connecting community members to help others pick up their recycles.
+          </p>
+          <p>Built with:</p>
+          <ul>
+            <li>JavaScript and React (MERN Stack) </li>
+            <li>MongoDB </li>
+            <li>Hosted with AWS and EC2</li>
+          </ul>
+        </Typography>
+      </Box>
+      <Box borderRadius="5%" {...defaultProps}>
+        <Typography >Wecycle (Fullstack App)</Typography>
+        <Typography>
+          <p>
+            A recycling app connecting community members to help others pick up their recycles.
+          </p>
+          <p>Built with:</p>
+          <ul>
+            <li>JavaScript and React (MERN Stack) </li>
+            <li>MongoDB </li>
+            <li>Hosted with AWS and EC2</li>
+          </ul>
+        </Typography>
+      </Box>
 
     </>
   );
