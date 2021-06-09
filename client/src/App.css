@@ -1,3 +1,48 @@
 .title {
   margin: 0 auto;
 }
+
+.cardContent {
+  padding: 1vh 1vw 1vh 2vw;
+}
+
+#profile {
+  width: 40vw;
+  height: 40vw;
+  max-width: 200px;
+  max-height: 200px;
+  margin: 0 auto;
+  margin-top: 2vh;
+}
+
+#linkedin {
+  width: 5vw;
+  height: 5vw;
+  min-width: 50px;
+  min-height: 50px;
+  margin: 0 auto;
+}
+
+#linkResize {
+  display: block;
+  width: 5vw;
+  height: 5vw;
+  min-width: 50px;
+  min-height: 50px;
+  margin: 0 auto;
+}
+
+.center {
+  margin: 0 auto;
+}
+
+.card {
+  display: block;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 600px) {
+ .card {
+   max-width: fit-content;
+ }
+}
