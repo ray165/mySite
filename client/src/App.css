@@ -20,7 +20,11 @@
   height: 5vw;
   min-width: 50px;
   min-height: 50px;
+  max-height: 50px;
+  max-width: 50px;
   margin: 0 auto;
+  background-color: white;
+  border-radius: 12%;
 }
 
 #linkResize {
@@ -39,6 +43,10 @@
 .card {
   display: block;
   margin: 0 auto;
+}
+
+#root {
+  background-image: url('./images/moon.jpg');
 }
 
 @media only screen and (max-width: 600px) {
