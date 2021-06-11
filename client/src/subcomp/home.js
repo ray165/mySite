@@ -55,10 +55,10 @@ export default function Home() {
       </Typography>
       <div id="linkContainer">
         <a href="https://www.linkedin.com/in/rwong97/" target="\_blank" className="linkResize">
-          <Avatar variant="square" src={linkedin} alt="linkedin" className="iconButton"/>
+          <Avatar variant="square" src={linkedin} alt="linkedin" className="iconButton" id="linkedin"/>
         </a>
         <a href="https://github.com/ray165" target="\_blank" className="linkResize">
-          <Avatar  src={github} alt="github" className="iconButton"/>
+          <Avatar  src={github} alt="github" className="iconButton" id="github"/>
         </a>
       </div>
       <Typography variant="h6" component="h4" align="center" id='portfolio'>

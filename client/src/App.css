@@ -16,7 +16,6 @@
 }
 
 .iconButton {
-  /* display: inline-block; */
   width: 5vw;
   height: 5vw;
   min-width: 50px;
@@ -24,16 +23,21 @@
   max-height: 50px;
   max-width: 50px;
   margin: 0 auto;
-  background-color: white;
-  border-radius: 20%;
+  /* background-color: whitesmoke; */
   margin-bottom: 2vh;
+}
+
+#linkedin {
+  border-radius: 20%;
 }
 
 #linkContainer {
   display: grid;
+  grid-template-columns: auto auto;
   justify-content: center;
   align-content: center;
-  grid-template-rows: auto ;
+  margin-top: 2vh;
+  column-gap: 2vw;
 }
 
 .linkResize {
@@ -43,12 +47,9 @@
   min-width: 50px;
   min-height: 50px;
   margin: 0 auto;
-  margin-right: 2vw;
+  /* margin-right: 2vw; */
 }
 
-/* .linkResize > img {
-  display: inline-block;
-} */
 
 .center {
   margin: 0 auto;
