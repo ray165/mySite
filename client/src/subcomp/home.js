@@ -4,6 +4,7 @@ import Box from "@material-ui/core/Box";
 import Avatar from "@material-ui/core/Avatar";
 import profile from "../images/profile.jpg";
 import linkedin from "../images/linkedin-icon.png";
+import github from "../images/github.png"
 import Link from '@material-ui/core/Link';
 
 import "../App.css";
@@ -52,12 +53,20 @@ export default function Home() {
       <Typography variant="h6" component="h3" align="center">
         {descriptionArray[index]}
       </Typography>
-      <a href="https://www.linkedin.com/in/rwong97/" target="\_blank" id="linkResize">
-        <Avatar variant="square" src={linkedin} alt="linkedin" id="linkedin"/>
-      </a>
+      <div id="linkContainer">
+        <a href="https://www.linkedin.com/in/rwong97/" target="\_blank" className="linkResize">
+          <Avatar variant="square" src={linkedin} alt="linkedin" className="iconButton"/>
+        </a>
+        <a href="https://github.com/ray165" target="\_blank" className="linkResize">
+          <Avatar  src={github} alt="github" className="iconButton"/>
+        </a>
+      </div>
+      <Typography variant="h6" component="h4" align="center" id='portfolio'>
+        portfolio
+      </Typography>
       <Box className="card" align="center" borderRadius="5%" {...defaultProps}>
         <div className="cardContent">
-          <Typography>Wecycle (Fullstack App)</Typography>
+          <Typography><a href="http://ec2-34-211-120-230.us-west-2.compute.amazonaws.com:8001/">Wecycle (Fullstack App)</a></Typography>
           <Typography>
             <p>
               A recycling app connecting community members to help others pick
@@ -72,19 +81,33 @@ export default function Home() {
           </Typography>
         </div>
       </Box>
-      <Box className="card" borderRadius="5%" {...defaultProps}>
+      <Box className="card" align="center" borderRadius="5%" {...defaultProps}>
         <div className="cardContent">
-          <Typography>Wecycle (Fullstack App)</Typography>
+          <Typography><a href="https://streamlinedapi.web.app/main.html">Streamlined (Fullstack App)</a></Typography>
           <Typography>
             <p>
-              A recycling app connecting community members to help others pick
-              up their recycles.
+              A project mangement app to track progress. Breaks down a project into tasks and users can leave comments like Trello. 
             </p>
             <p>Built with:</p>
             <ul>
-              <li>JavaScript and React (MERN Stack) </li>
-              <li>MongoDB </li>
-              <li>Hosted with AWS and EC2</li>
+              <li>JavaScript and Bootstrap </li>
+              <li>FireStore databse </li>
+              <li>Hosted with Firebase</li>
+            </ul>
+          </Typography>
+        </div>
+      </Box>
+      <Box className="card" align="center" borderRadius="5%" {...defaultProps}>
+        <div className="cardContent">
+          <Typography><a href="https://github.com/ray165/Ravberry">Hackathon: Hack The Break</a></Typography>
+          <Typography>
+            <p>
+              Watermarking app for pictures. I built the front-end with Bootstrap and allowed for user input such as checkboxes and image upload. The data is sent to the back end which is handled with Python and Flask.
+            </p>
+            <p>Built with:</p>
+            <ul>
+              <li>HTML/ CSS </li>
+              <li>Bootstrap</li>
             </ul>
           </Typography>
         </div>

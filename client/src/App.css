@@ -12,10 +12,11 @@
   max-width: 200px;
   max-height: 200px;
   margin: 0 auto;
-  margin-top: 2vh;
+  margin-top: 4vh;
 }
 
-#linkedin {
+.iconButton {
+  /* display: inline-block; */
   width: 5vw;
   height: 5vw;
   min-width: 50px;
@@ -24,17 +25,30 @@
   max-width: 50px;
   margin: 0 auto;
   background-color: white;
-  border-radius: 12%;
+  border-radius: 20%;
+  margin-bottom: 2vh;
 }
 
-#linkResize {
-  display: block;
+#linkContainer {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  grid-template-rows: auto ;
+}
+
+.linkResize {
+  /* display: inline-block; */
   width: 5vw;
   height: 5vw;
   min-width: 50px;
   min-height: 50px;
   margin: 0 auto;
+  margin-right: 2vw;
 }
+
+/* .linkResize > img {
+  display: inline-block;
+} */
 
 .center {
   margin: 0 auto;
@@ -45,8 +59,16 @@
   margin: 0 auto;
 }
 
-#root {
+body {
   background-image: url('./images/moon.jpg');
+}
+
+#portfolio {
+  margin-top: 4vh;
+}
+
+h1, h2, h3, h4 {
+  color: white;
 }
 
 @media only screen and (max-width: 600px) {
