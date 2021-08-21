@@ -5,7 +5,7 @@ import Avatar from "@material-ui/core/Avatar";
 import profile from "../images/profile.jpg";
 import linkedin from "../images/linkedin-icon.png";
 import github from "../images/github.png"
-import Link from '@material-ui/core/Link';
+// import Link from '@material-ui/core/Link';
 
 import "../App.css";
 
@@ -20,7 +20,7 @@ const defaultProps = {
 };
 
 export default function Home() {
-  const [fade, setFade] = useState(true);
+  // const [fade, setFade] = useState(true);
   const counter = useRef(0);
   const [index, setIndex] = useState(0);
   const descriptionArray = [
@@ -42,7 +42,7 @@ export default function Home() {
       clearInterval(looper);
       //   setFade(false)
     };
-  }, [index]);
+  }, [index, descriptionArray.length]);
 
   return (
     <>
