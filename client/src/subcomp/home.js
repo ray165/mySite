@@ -66,6 +66,40 @@ export default function Home() {
       </Typography>
       <Box className="card" align="center" borderRadius="5%" {...defaultProps}>
         <div className="cardContent">
+          <Typography><a href="https://whyboard.netlify.app/">Whiteboard</a></Typography>
+          <Typography>
+            <p>
+              Want to draw something? This is it! I built this project because I was interested in creating a box selection tool -- something you'd see on MS Paint.
+            </p>
+            <p>Built with:</p>
+            <ul>
+              <li>JavaScript and React</li>
+              <li>Hosted with Netlify</li>
+            </ul>
+          </Typography>
+        </div>
+      </Box>
+      <Box className="card" align="center" borderRadius="5%" {...defaultProps}>
+        <div className="cardContent">
+          <Typography><a href="https://urlsim.netlify.app/">URL Shortener</a></Typography>
+          <Typography>
+            <p>
+              This app "shortens" URLs. However, it's limited by the free domain name from Netlify. 
+              This app generates a unique 4 character code and stores it along with the user's URL. When you paste the shortened link, the app will search the DB for your link and will redirect to your requested page. I avoid collision by re-running the code generator if the code is already existing. 
+            </p>
+            <p>Built with:</p>
+            <ul>
+              <li>JavaScript and React (MERN Stack) </li>
+              <li>Node JS</li>
+              <li>Express</li>
+              <li>MongoDB </li>
+              <li>Hosted with Netlify front-end and Heroku back-end </li>
+            </ul>
+          </Typography>
+        </div>
+      </Box>
+      <Box className="card" align="center" borderRadius="5%" {...defaultProps}>
+        <div className="cardContent">
           <Typography><a href="http://ec2-34-211-120-230.us-west-2.compute.amazonaws.com:8001/">Wecycle (Fullstack App)</a></Typography>
           <Typography>
             <p>
@@ -106,7 +140,7 @@ export default function Home() {
             </p>
             <p>Built with:</p>
             <ul>
-              <li>HTML/ CSS </li>
+              <li>HTML/ CSS</li>
               <li>Bootstrap</li>
             </ul>
           </Typography>
